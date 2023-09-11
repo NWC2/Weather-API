@@ -2,26 +2,6 @@
 
 ## Pre-requisites
 
-The minimum requirements for this exercise are:
-
-1. Basic HTML
-2. Basic CSS
-3. CSS Flex or CSS Grid
-4. JS ES6
-5. A team of 2
-
-## Goals
-
-The minimum requirements for this exercise are:
-
-1. Create a proper web page using semantic markup and taking into consideration accessibility and responsiveness.
-2. Practice writing any front-end language you like
-3. **Getting introduced to React**
-4. **A wider view on React component life cycle**
-5. **Understanding the basics of Props & State**
-
-## Pre-requisites
-
 - Semantic HTML
 - CSS Layouts 
 - JS ES6
