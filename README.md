@@ -20,6 +20,39 @@ The minimum requirements for this exercise are:
 4. **A wider view on React component life cycle**
 5. **Understanding the basics of Props & State**
 
+## Pre-requisites
+
+- Semantic HTML
+- CSS Layouts 
+- JS ES6
+- Basic React knowledge ( Topics Mentioned in the React Research Activity )
+
+
+## Learning Objective
+
+- Build a static page from scratch using HTML, CSS
+- Acquire hands-on experience with React components, props, state and life-cycles
+- Use JSON file to read data and fill it into React components
+- Use existing apis to make your page dynamic
+- Practice some error handling and debugging
+- Use some advanced JS concepts and ES6 features (Arrays, mapping, filtering,..)
+- Collaborate effectively as a team, while managing Git operations on the project
+- Document your code properly
+
+
+## Deliverables
+
+The project **must** meet the following conditions:
+
+- **Technology Stack:** Built using React and ES6 JavaScript syntax.
+- **Accessibility:** Utilize semantic HTML for better accessibility.
+- **Responsiveness:** The design must be mobile-friendly and responsive across different devices.
+- **Error Handling:** Implement basic error handling mechanisms.
+- **Documentation:** Code should be well-documented to explain its functionality.
+- **Git:** 
+ - Commit properly the steps
+ - Create branches for working on your features following this naming convention **[FirstnameLastname_Feature]**
+
 ## Set up
 
 Navigate to the correct directory using the command line.
