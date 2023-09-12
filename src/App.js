@@ -21,6 +21,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
+        <p>HOLA!</p>
         <SayHi />
         <SayHello color="black" name={this.state.name} />
         <Search handleInput={this.handleInputChange} />
