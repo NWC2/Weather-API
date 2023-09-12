@@ -1,33 +1,68 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import Search from "./components/Search";
-
 import SayHi, { SayHello } from "./components/WeatherItem";
 import fakeWeatherData from "./fakeWeatherData.json";
-
 import "./App.css";
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: "Karim"
-    };
-  }
-
-  handleInputChange = value => {
-    this.setState({ name: value });
+const App = () => {
+  const [name, setName] = useState("Karim");
+  let image = "https://placekitten.com/g/200/300"
+  const handleInputChange = (value) => {
+    setName(value);
   };
 
-  render() {
-    return (
-      <div className="app">
-        <p>HOLA!</p>
-        <SayHi />
-        <SayHello color="black" name={this.state.name} />
-        <Search handleInput={this.handleInputChange} />
-      </div>
-    );
-  }
-}
+  return (
+    <div className="app">
+      <main>
+        <section className="currentWeather">
+          <img src={image}></img>
+          <h3 className="weatherStatus">overcast cloud</h3>
+          <h3 className="weatherTemperature"><span>Temperature</span> 10 to 11 C</h3>
+          <p className="moreInfo"><span>Humidity</span> 78% <span>Pressure</span> 1008.48</p>
+        </section>
+        <section className="forcast">
+          <ul>
+            <li>
+              <p className="time">3:00</p>
+              <img src={image}></img>
+              <p className="forcatTemprature">8 C</p>
+            </li>
+            <li>
+              <p className="time">3:00</p>
+              <img src={image}></img>
+              <p className="forcatTemprature">8 C</p>
+            </li>
+            <li>
+              <p className="time">3:00</p>
+              <img src={image}></img>
+              <p className="forcatTemprature">8 C</p>
+            </li>
+            <li>
+              <p className="time">3:00</p>
+              <img src={image}></img>
+              <p className="forcatTemprature">8 C</p>
+            </li>
+            <li>
+              <p className="time">3:00</p>
+              <img src={image}></img>
+              <p className="forcatTemprature">8 C</p>
+            </li>
+            <li>
+              <p className="time">3:00</p>
+              <img src={image}></img>
+              <p className="forcatTemprature">8 C</p>
+            </li>
+            <li>
+              <p className="time">3:00</p>
+              <img src={image}></img>
+              <p className="forcatTemprature">8 C</p>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  );
+};
+
 
 export default App;
