@@ -59,7 +59,7 @@ Add and commit this change to git, and push it up to your remote github repo:
 # git push
 ```
 
-Pay attention to any errors, and then check that your changes made it to github, by visiting github.com with your browser and inspecting your repo there.
+Pay attention to any errors, and then check that your changes made it to github, by visiting github.com with your browser and inspecting your repo there.a
 
 ## Instructions
 
