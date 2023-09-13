@@ -14,17 +14,32 @@ class App extends Component {
     };
   }
 
+
   handleInputChange = value => {
     this.setState({ name: value });
   };
 
   render() {
     return (
-      <div className="app">
-        <SayHi />
-        <SayHello color="black" name={this.state.name} />
-        <Search handleInput={this.handleInputChange} />
-      </div>
+      <div className = "app">
+      <div className="header">
+          <form>
+          <input type="text" placeholder="London"></input>
+
+          <button type="submit">FIND WEATHER</button>
+          </form>
+        </div>
+        <div className="content">
+          <img></img>
+          <h2>Temperature</h2>
+
+          <h3>Humidity</h3>
+          <h3>Pressure</h3>
+        </div>
+
+        <div className="details">
+        </div>
+        </div>
     );
   }
 }
