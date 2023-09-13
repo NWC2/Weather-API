@@ -26,8 +26,14 @@ class App extends Component {
       //   <Search handleInput={this.handleInputChange} /> */
       // </div>
 
-      <div> alialahmad_MohammadAlAgha</div>
-    );
+
+     <header> 
+      <input type="text" id="inputCity"></input>
+        <button>Find The Wether </button>
+
+     </header>
+
+      );
   }
 }
 
