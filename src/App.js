@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import mc from "./img/weather-icons/mostlycloudy.svg"
 import Search from "./components/Search";
 
 import SayHi, { SayHello } from "./components/WeatherItem";
@@ -17,7 +18,6 @@ class App extends Component {
   // handleInputChange = value => {
   //   this.setState({ name: value });
   // };
-
   render() {
     return (
       // <div className="app">
@@ -27,11 +27,17 @@ class App extends Component {
       // </div>
 
       // <div> alialahmad_MohammadAlAgha</div>
-      <header>
-        london
-        <button className="find weather" onclick="" > FIND WEATHER</button>
+        <div>
+              <header>
+      <input type="text" placeholder="Type in a city name" name="city-name" id="city-name" />
+        <button className="find-weather" onclick="" > FIND WEATHER</button>
 
       </header>
+      <div>
+        <img src={mc} className="mostly-cloudy" />
+      </div>
+        </div>
+      
     );
   }
 }

@@ -15,11 +15,39 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-h2{
-    display: flex;
-    
+header{
+  background-color: #759eda;
+  padding: 1%;
+  font-family: Raleway;
 }
+
+#city-name{
+  color: white;
+  background-color: #759eda;
+  font-size: x-large;
+  border: none;
+  margin-right: 2%;
+  font-family: Raleway;
+  
+}
+.find-weather{
+  font-size: x-large;
+  background-color: #5879c7;
+  padding: 1%;
+  /* margin-left: 1%; */
+  border: none;
+  font-family: Raleway;
+
+}
+body{
+  margin: 0;
+  background-color: #9ccef4;
+}
+.mostly-cloudy{
+  width: 15%;
+}
+
+
 /*  Search bar */
 
 /* Current weather */
