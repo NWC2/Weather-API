@@ -26,7 +26,12 @@ class App extends Component {
       //   <Search handleInput={this.handleInputChange} /> */
       // </div>
 
-      <div> alialahmad_MohammadAlAgha</div>
+      // <div> alialahmad_MohammadAlAgha</div>
+      <header>
+        london
+        <button className="find weather" onclick="" > FIND WEATHER</button>
+
+      </header>
     );
   }
 }

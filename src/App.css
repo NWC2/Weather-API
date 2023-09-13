@@ -16,6 +16,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+h2{
+    display: flex;
+    
+}
 /*  Search bar */
 
 /* Current weather */
