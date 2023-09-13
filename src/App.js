@@ -21,9 +21,14 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <SayHi />
-        <SayHello color="black" name={this.state.name} />
-        <Search handleInput={this.handleInputChange} />
+        <main role="main" class="main">
+        <header>
+          <nav className="nav">
+              <input type="text" name="" id="" />
+              <button className="button">FIND WEATHER</button>
+          </nav>
+          </header>
+        </main>
       </div>
     );
   }
