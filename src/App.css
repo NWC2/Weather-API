@@ -1,6 +1,4 @@
-body{
-  background-color:#9CCEF4;
-  margin: auto;
+
 * {
   font-family: 'Raleway', sans-serif;
 }
@@ -35,19 +33,12 @@ header {
   color: white;
   font-size: 20px;
 
-.header{
 }
 
-  background-color: #759eda;
-
-  height: 100px;
 #country::placeholder {
   color: #fdfdfe;
 }
 
-form{
-  width: 50%;
-  height: 100px;
 
 #country:focus {
   border-bottom: 1px solid white;
@@ -79,8 +70,6 @@ main {
   align-self: center;
   justify-content: space-between;
   align-items: center;
-  margin-left: 20px;
-
   display: flex;
   flex-direction: column;
 }
@@ -101,7 +90,6 @@ main {
   margin-top: 5%;
 }
 
-button{
 
 .timedata {
   display: flex;
@@ -113,15 +101,7 @@ button{
   font-size: 20px;
 
 }
-
-  margin-left: 50px;
-  width: 200px;
-  height: 50px;
-  border-radius: 0;
-  background-color: #5879c7;
-  border-style: none;
-  font-size: larger;
-}
+ 
 .weatherimg {
   width: 70%;
   height: 70%;
