@@ -3,8 +3,9 @@ import Search from "./components/Search";
 
 import SayHi, { SayHello } from "./components/WeatherItem";
 import fakeWeatherData from "./fakeWeatherData.json";
-
+import mostlyCloudy from '../src/img/weather-icons/mostlycloudy.svg';
 import "./App.css";
+
 
 class App extends Component {
   // constructor(props) {
@@ -20,15 +21,16 @@ class App extends Component {
 
   render() {
     return (
-    //   <div className="app">
-    //     <SayHi />
-    //     <SayHello color="black" name={this.state.name} />
-    //     <Search handleInput={this.handleInputChange} />
-    //   </div>
-    <header>
-      <input type="text"/>
-      <button className="btn" onclick="">FIND WEATHER</button>
-    </header>
+      <div className="app">
+      <main>
+      <header>
+        <input type="text" placeholder="Type in a city name"/>
+        <button className="btn" onclick="">FIND WEATHER</button>
+      </header>
+      <img src={mostlyCloudy} alt="overcast clouds"/>
+      </main>
+      
+      </div>
     );
   }
 

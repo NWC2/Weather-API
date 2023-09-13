@@ -1,24 +1,56 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('/home/jana/Desktop/Weather-API/public/index.html') format('truetype');
+}
+
 
 body{
-  margin: 0;
+  margin:0;
   padding: 0;
+  font-family:'Raleway', sans-serif;
+  background-color: #8FC8F4;
 }
 header{
+  font-family:'Raleway', sans-serif;
   background-color:#759EDA;
-  width:auto;
-  height: 120px;
-  justify-content: space-between;
+  height: 175px;
 }
 input{
+  font-family:'Raleway', sans-serif;
+  border: none;
   background-color:#759EDA;
-  border-color: #759EDA;
-  margin-left: 20%;
-}
+  margin-left: 20px;
+  height: 50px;
+  font-size:28px;
+  color: white;
+  outline: none;
+ }
+ ::placeholder{
+  color: white;
+  font-family:'Raleway', sans-serif;
+
+ }
 button{
+  font-family:'Raleway', sans-serif;
   background-color: #5879C7;
   border: 0px;
-  border-radius: 5px;
-  height: 100px;
-  margin-left: 10%;
-  
+  border-radius: 3px;
+  height: 75px;
+  margin-left: 5%;
+  margin-top: 45px;
+  width:200px;
+  font-size: 20px;
+  color:#25355c;
+}
+input:focus{
+  border-bottom: 2px solid #5879C7;
+}
+img{
+  display:flex;
+  width: 250px;
+  height: 250px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 50%;
+  margin-left: 43%;
 }
