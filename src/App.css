@@ -1,25 +1,168 @@
-.app {
-  height: 100vh;
-  width: 100vw;
-  transition: background-color 1s ease-in;
+/* CSS Code*/
+/* Import from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700;800;900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: #9CCEF4;
 }
 
-.app__header,
-.app__main {
+#root { 
+  height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  font-family: "Raleway", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-/*  Search bar */
+.header {
+  padding: 25px;
+  background-color: #759EDA;
+}
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.nav input {
+  background-color: #759EDA;
+  border: none;
+  width: 300px;
+  height: 63px;
+  font-size: 25px;
+}
+.nav input::placeholder {
+  color: white;
+  opacity: .6;
+}
+.nav input:focus {
+  outline: none;
+  border-bottom: 1px #5879C7 solid;
+  color: white;
+}
+.nav input:focus::placeholder {
+  opacity: 0;
+}
+.nav .button {
+  background-color: #5879C7;
+  color: #090B4F;
+  font-size: 20px;
+  padding: 20px;
+  border: none;
+}
 
-/* Current weather */
+section.w-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.w-details .content {
+  padding: 25px;
+  text-align: center;
+}
+section.w-details .content .w-image img {
+  width: 300px;
+}
+section.w-details .content .w-image p {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+}
+section.w-details .content .temp {
+  font-size: 30px;
+  color: #090B4F;
+  font-weight: 500;
+}
+section.w-details .content .temp span {
+  font-size: 26px;
+  font-weight: normal;
+  margin-left: 10px;
+}
 
-div {
-  border: 5px solid red;
+section.w-details .content .details {
+  font-size: 18px;
+  color: #090B4F;
+  display: flex;
+  justify-content: space-between;
+}
+section.w-details .content .details span {
+  font-weight: 500;
+}
+
+section.w-hour {
+  padding: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+section.w-hour p {
+  font-size: 20px;
+}
+section.w-hour img {
+  width: 100px;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 650px) {
+  #root {
+    height: auto;
+  }
+  .header .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .header .nav input {
+    width: 200px;
+  }
+  .header .nav input::placeholder {
+    text-align: center;
+    font-size: 20px;
+  }
+  .header .nav .button {
+    font-size: 20px;
+    padding: 10px;
+  }
+  section.w-hour {
+    flex-direction: column;
+  }
+
+  section.w-details .content .w-image img {
+    width: 200px;
+  }
+  section.w-details .content .w-image p {
+  font-size: 20px;
+  }
+
+  section.w-details .content .temp {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  section.w-details .content .temp span {
+    font-size: 20px;
+  }
+  section.w-details .content .details {
+    flex-direction: column;
+  }
+  section.w-details .content .details span:nth-child(2) {
+    margin-top: 20px;
+  }
+
+  section.w-hour {
+    padding-top: 0;
+  }
+  section.w-hour div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+  section.w-hour img {
+    width: 75px;
+  }
+  section.w-hour div:not(:first-child) {
+    border-top: 1px solid #090B4F;
+  }
 }
