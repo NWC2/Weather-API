@@ -18,7 +18,7 @@ function App() {
       <div id="wrapper">
         <header>
 
-          <input type="text" name="country" id="country" placeholder="london" />
+          <input type="text" name="country" id="country" placeholder="Type in a City Name" />
           <input class="button" type="submit" value="FIND WEATHER"></input>
         </header>
 
