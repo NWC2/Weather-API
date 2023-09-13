@@ -1,37 +1,12 @@
 import React, { Component } from "react";
-import Search from "./components/Search";
-
-import SayHi, { SayHello } from "./components/WeatherItem";
 import fakeWeatherData from "./fakeWeatherData.json";
-
+import Home from './components/Home';
 import "./App.css";
-
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: "Karim"
-    };
+const App = () => {
+  return (
+    <div className="app">
+      <Home />
+    </div>
+  );
   }
-
-  handleInputChange = value => {
-    this.setState({ name: value });
-  };
-
-  render() {
-    return (
-      <div className="app">
-        <main role="main" class="main">
-        <header>
-          <nav className="nav">
-              <input type="text" name="" id="" />
-              <button className="button">FIND WEATHER</button>
-          </nav>
-          </header>
-        </main>
-      </div>
-    );
-  }
-}
-
 export default App;
