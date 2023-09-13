@@ -1,25 +1,24 @@
-.app {
-  height: 100vh;
-  width: 100vw;
-  transition: background-color 1s ease-in;
+
+body{
+  margin: 0;
+  padding: 0;
 }
-
-.app__header,
-.app__main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  font-family: "Raleway", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+header{
+  background-color:#759EDA;
+  width:auto;
+  height: 120px;
+  justify-content: space-between;
 }
-
-/*  Search bar */
-
-/* Current weather */
-
-div {
-  border: 5px solid red;
+input{
+  background-color:#759EDA;
+  border-color: #759EDA;
+  margin-left: 20%;
+}
+button{
+  background-color: #5879C7;
+  border: 0px;
+  border-radius: 5px;
+  height: 100px;
+  margin-left: 10%;
+  
 }

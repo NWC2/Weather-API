@@ -7,26 +7,31 @@ import fakeWeatherData from "./fakeWeatherData.json";
 import "./App.css";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: "Karim"
-    };
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     name: "Karim"
+  //   };
+  // }
 
-  handleInputChange = value => {
-    this.setState({ name: value });
-  };
+  // handleInputChange = value => {
+  //   this.setState({ name: value });
+  // };
 
   render() {
     return (
-      <div className="app">
-        <SayHi />
-        <SayHello color="black" name={this.state.name} />
-        <Search handleInput={this.handleInputChange} />
-      </div>
+    //   <div className="app">
+    //     <SayHi />
+    //     <SayHello color="black" name={this.state.name} />
+    //     <Search handleInput={this.handleInputChange} />
+    //   </div>
+    <header>
+      <input type="text"/>
+      <button className="btn" onclick="">FIND WEATHER</button>
+    </header>
     );
   }
+
 }
 
 export default App;
