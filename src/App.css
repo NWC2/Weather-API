@@ -43,7 +43,7 @@ button{
   color:#25355c;
 }
 
-img{
+.firstimage{
   display:flex;
   width: 250px;
   height: 250px;
@@ -62,7 +62,26 @@ img{
   font-family:'Raleway', sans-serif;
   color:#25355c;
   font-size: 28px;
-  margin-left: 39%;
-  font-weight: bold;
+  margin-left: 41%;
   margin-top: 35px;
+}
+.humidity{
+  font-family:'Raleway', sans-serif;
+  color:#25355c;
+  font-size: 19px;
+  margin-left: 41%;
+  margin-top: 35px;
+}
+table{
+  color:#25355c;
+  font-size: 19px;
+  margin-left: 19%;
+  margin-right:40%;
+  width: 60%;
+  text-align: center;
+  margin-top: 3.9%;
+
+}
+.secondrow{
+  font-size: 10px;
 }
