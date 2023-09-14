@@ -6,6 +6,7 @@ import fakeWeatherData from "./fakeWeatherData.json";
 import mostlyCloudy from '../src/img/weather-icons/mostlycloudy.svg';
 import "./App.css";
 import clear from '../src/img/weather-icons/clear.svg'
+import Head from './components/Header';
 
 class App extends Component {
   // constructor(props) {
@@ -23,16 +24,15 @@ class App extends Component {
     return (
       <div className="app">
       <main>
-      <header>
-        <input type="text" placeholder="Type in a city name"/>
-        <button className="btn" onclick="">FIND WEATHER</button>
-      </header>
+      <Head />
+      <div className="section 2">
       <img className="firstimage" src={mostlyCloudy}/>
       <div className="overcast">
         overcast clouds
       </div>
       <p className="temp"><b>Temperature&nbsp;</b>&nbsp;10&deg; to 11&deg;C</p>
       <p className="humidity"><b>Humidity &nbsp; </b>&nbsp;78% &nbsp;<b>    Pressure  &nbsp;</b>  100848</p>
+      </div>
       </main>
       <div className="table">
         <table>
