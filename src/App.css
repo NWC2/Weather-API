@@ -21,22 +21,33 @@ header{
   font-family: Raleway;
 }
 
-#city-name{
-  color: white;
-  background-color: #759eda;
-  font-size: x-large;
+input{
+  font-family:'Raleway', sans-serif;
   border: none;
-  margin-right: 2%;
-  font-family: Raleway;
-  
+  background-color:#759EDA;
+  margin-left: 1%;
+  font-size: x-large;
+  color: white;   
+  outline: none;
 }
+::placeholder{   
+  color: white;
+  font-family:'Raleway', sans-serif;
+  }  
+  input:focus{   
+  border-bottom: 2px solid #5879C7; 
+}
+#city-name{
+  padding: 0.5%;
+}
+
 .find-weather{
   font-size: x-large;
   background-color: #5879c7;
   padding: 1%;
-  /* margin-left: 1%; */
+  margin-left: 3%;
   border: none;
-  font-family: Raleway;
+  font-family:'Raleway', sans-serif;
 
 }
 body{
@@ -44,9 +55,38 @@ body{
   background-color: #9ccef4;
 }
 .mostly-cloudy{
-  width: 15%;
+  width: 14%;
 }
+.img-mc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+.mc-text{
+  color: white;
+  margin-top: -0.5%;
+  font-size: 25px;
+  font-family:'Raleway', sans-serif;
+}
+  .temp-data p{
+  font-family:'Raleway', sans-serif;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
 
+}
+.humidity-pressure{
+  /* background-color: aqua; */
+  font-family:'Raleway', sans-serif;
+  font-size: medium;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
 
 /*  Search bar */
 
