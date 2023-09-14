@@ -46,14 +46,11 @@ class App extends Component {
 
         </div>
       
-<<<<<<< HEAD
     );
 
 
-=======
-      );
+      ;
     }
->>>>>>> agha
   }
 
 export default App;
