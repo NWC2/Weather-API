@@ -38,27 +38,60 @@ class App extends Component {
       // </div>
 
     <div>
-          <header> 
-      <input type="text" id="inputCity" placeholder="Type a city in here"></input>
-        <button>Find Weather </button>
+              <header>
+      <input type="text" placeholder="Type in a city name" name="city-name" id="city-name" />
+        <button className="find-weather" onclick="" > FIND WEATHER</button>
 
-     </header>
-
-
-<main>
-<img className="mainImage" src={mc}></img>
-<div className="temp-data">
+      </header>
+      <div className="img-mc">
+        <img src={mc} className="mostly-cloudy" />
+        <h2 className="mc-text">overcast clouds</h2>
+      </div>
+      <div className="temp-data">
         <p><b>Temperature&nbsp;</b>&nbsp;10&deg; to 11&deg;C</p>
       </div>
       <div className="humidity-pressure">
         <p className="humidity"><b>Humidity&nbsp;</b>&nbsp;&nbsp;&nbsp;&nbsp;78%</p>
         <p className="pressure"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pressure&nbsp;</b>&nbsp;&nbsp;&nbsp;&nbsp;1008.48</p>
-
       </div>
-
-
-</main>
-
+     
+      <footer> 
+        <div className="daily-weather">
+          <p>03:00</p>
+          <img src={mc}/>
+          <p>8&deg;C</p>
+        </div>
+        <div className="daily-weather">
+          <p>06:00</p>
+          <img src={mc}/>
+          <p>9&deg;C</p>
+        </div>
+        <div className="daily-weather">
+          <p>09:00</p>
+          <img src={clear}/>
+          <p>14&deg;C</p>
+        </div>
+        <div className="daily-weather">
+          <p>12:00</p>
+          <img src={clear}/>
+          <p>17&deg;C</p>
+        </div>
+        <div className="daily-weather">
+          <p>15:00</p>
+          <img src={clear}/>
+          <p>18&deg;C</p>
+        </div>
+        <div className="daily-weather">
+          <p>18:00</p>
+          <img src={clear}/>
+          <p>16&deg;C</p>
+        </div>
+        <div className="daily-weather">
+          <p>21:00</p>
+          <img src={mc}/>
+          <p>13&deg;C</p>
+        </div>
+        </footer>
     </div>
   
     );
