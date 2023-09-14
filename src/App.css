@@ -11,7 +11,7 @@ body{
 header{
   font-family:'Raleway', sans-serif;
   background-color:#759EDA;
-  height: 175px;
+  height: 140px;
 }
 input{
   font-family:'Raleway', sans-serif;
@@ -37,7 +37,7 @@ button{
   border-radius: 3px;
   height: 75px;
   margin-left: 5%;
-  margin-top: 45px;
+  margin-top: 30px;
   width:200px;
   font-size: 20px;
   color:#25355c;
@@ -84,4 +84,43 @@ table{
 }
 .secondrow{
   font-size: 10px;
+}
+@media screen and (max-width: 600px) {
+  header {
+    height: 100px;
+  }
+
+  input {
+    font-size: 20px;
+  }
+
+  button {
+    height: 60px;
+    font-size: 16px;
+  }
+
+  .firstimage {
+    width: 150px;
+    height: 150px;
+    margin-left: 29%;
+  }
+
+  .overcast{
+    font-size: 18px;
+    margin-left: 30%;
+  }
+  .temp {
+    font-size: 18px;
+    margin-left: 25%;
+  }
+  .humidity{
+    font-size: 16px;
+    margin-left: 20%;
+  }
+
+  table {
+    font-size: 20px;
+    margin-left: 8%;
+    margin-right: 5%;
+  }
 }
