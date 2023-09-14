@@ -76,4 +76,20 @@ main{
     width: 15%;
   }
 
-  
+  .temp-data p{
+    font-family:'Raleway', sans-serif;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+  margin-bottom: 15px;
+  }
+  .humidity-pressure{
+    /* background-color: aqua; */
+    font-family:'Raleway', sans-serif;
+    font-size: medium;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+  }
