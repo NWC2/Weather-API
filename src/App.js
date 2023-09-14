@@ -10,31 +10,31 @@ import Head from './components/Header';
 import Section2 from './components/Section2';
 import Table from './components/Table';
 
-
-class App extends Component {
+import { useState,useEffect } from "react";
+// class App extends Component {
   // constructor(props) {
   //   super(props);
   //   this.state = {
   //     name: "Karim"
   //   };
   // }
-
+  function App() {
+    const [data, setData] = useState(null);
   // handleInputChange = value => {
   //   this.setState({ name: value });
   // };
-
-  render() {
+  // render() {
     return (
       <div className="app">
       <main>
       <Head />
-      <Section2 />
-      <Table />
+      <Section2 data={fakeWeatherData}/>
+      <Table data={fakeWeatherData}/>
       </main>
       </div>
       )
   }
 
-}
+
 
 export default App;

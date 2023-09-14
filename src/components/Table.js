@@ -1,9 +1,17 @@
 import React from 'react';
-import mostlyCloudy from '../img/weather-icons/mostlycloudy.svg';
-import clear from '../img/weather-icons/clear.svg';
+import mostlycloudy from "../img/weather-icons/mostlycloudy.svg";
+import clear from "../img/weather-icons/clear.svg";
+import partlycloudy from "..//img/weather-icons/partlycloudy.svg";
+import rain from "..//img/weather-icons/rain.svg";
+import snow from "..//img/weather-icons/snow.svg";
+import unknown from "..//img/weather-icons/unknown.svg";
+import storm from "..//img/weather-icons/storm.svg";
+import cloudy from "..//img/weather-icons/cloudy.svg";
+import drizzle from "..//img/weather-icons/drizzle.svg";
+import fog from "..//img/weather-icons/fog.svg";
 
-function table1(){
-    return(
+const table1 = (props) => {
+    return (
         <div className="table">
         <table>
         <tr>
@@ -16,22 +24,22 @@ function table1(){
             <td>21:00</td>
         </tr>
         <tr className="secondrow">
-            <td><img src={mostlyCloudy}/></td>
-            <td><img src={mostlyCloudy}/></td>
+            <td><img src={mostlycloudy}/></td>
+            <td><img src={mostlycloudy}/></td>
             <td><img src={clear}/></td>
             <td><img src={clear}/></td>
             <td><img src={clear}/></td>
             <td><img src={clear}/></td>
-            <td><img src={mostlyCloudy}/></td>
+            <td><img src={mostlycloudy}/></td>
         </tr>
         <tr>
-            <td>8&deg;C</td>
-            <td>9&deg;C</td>
-            <td>14&deg;C</td>
-            <td>17&deg;C</td>
-            <td>18&deg;C</td>
-            <td>16&deg;C</td>
-            <td>13&deg;C</td>
+            <td>{props.data.list[1].main.temp}&deg;C</td>
+            <td>{props.data.list[2].main.temp}&deg;C</td>
+            <td>{props.data.list[3].main.temp}&deg;C</td>
+            <td>{props.data.list[4].main.temp}&deg;C</td>
+            <td>{props.data.list[5].main.temp}&deg;C</td>
+            <td>{props.data.list[6].main.temp}&deg;C</td>
+            <td>{props.data.list[7].main.temp}&deg;C</td>
         </tr>
       </table>
       </div>

@@ -285,7 +285,7 @@ Add a new section to your app that will display the weather over the next 24 hou
 **Extra <kbd>🔑x5-15</kbd> keys for a responsive design and if you follow [BEM architecture](https://www.google.com/?q=BEM%20architecture)**
 
 **Minus <kbd>🔑x20</kbd> keys extra empty lines and unformatted code**
-a
+
 ### Tips
 
 1. Temperature units are Celsius, Fahrenheit and Kelvin
