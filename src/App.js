@@ -27,7 +27,13 @@ class App extends Component {
         <input type="text" placeholder="Type in a city name"/>
         <button className="btn" onclick="">FIND WEATHER</button>
       </header>
-      <img src={mostlyCloudy} alt="overcast clouds"/>
+      <img src={mostlyCloudy}/>
+      <div className="overcast">
+        overcast clouds
+      </div>
+       <div className="temp">
+        Temperature
+      </div>
       </main>
       
       </div>

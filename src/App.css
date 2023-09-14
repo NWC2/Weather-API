@@ -2,8 +2,6 @@
   font-family: 'Raleway';
   src: url('/home/jana/Desktop/Weather-API/public/index.html') format('truetype');
 }
-
-
 body{
   margin:0;
   padding: 0;
@@ -28,7 +26,6 @@ input{
  ::placeholder{
   color: white;
   font-family:'Raleway', sans-serif;
-
  }
 button{
   font-family:'Raleway', sans-serif;
@@ -49,8 +46,22 @@ img{
   display:flex;
   width: 250px;
   height: 250px;
-  margin-left: 20px;
   margin-top: 20px;
   border-radius: 50%;
   margin-left: 43%;
+}
+.overcast{
+  font-family:'Raleway', sans-serif;
+  color:white;
+  font-size: 28px;
+  margin-left: 44%;
+
+}
+.temp{
+  font-family:'Raleway', sans-serif;
+  color:#25355c;
+  font-size: 28px;
+  margin-left: 39%;
+  font-weight: bold;
+  margin-top: 35px;
 }
