@@ -95,3 +95,12 @@ body{
 /* div {
   border: 5px solid red;
 } */
+
+header{background-color: rgba(147, 155, 255, 0.89);
+  padding: 2%;}
+  
+  header button{
+    height: 50%;
+    width: 30%;
+  
+  }
