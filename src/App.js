@@ -1,29 +1,17 @@
-import { useState } from 'react'
 import "./App.css";
 import Search from './components/Search.js'
 import mostlycloudy from "./img/weather-icons/mostlycloudy.svg"
 import clear from "./img/weather-icons/clear.svg"
+import CurrentWeather from './components/CurrentWeather';
 function App() {
 
 
   //use useState() to target any change in the input text
-  const [search, setSearch] = useState('');
   return (
     <div className="app">
       <Search />
       <main>
-
-        <section className="currentWeather">
-          <img src={mostlycloudy} alt="weather status" width={150} height={150} />
-          <section className="weatherDescription">
-            <p className="weatherStatus">OverCast clouds</p>
-            <p><span className="temperatureProperty">temperature</span> 10° to 11°C</p>
-            <p><span className="humidityProperty">Humidity </span>78%<span className="pressureProperty"> Pressure </span>1008.4</p>
-          </section>
-
-        </section>
-
-
+<CurrentWeather/>
         <section className="weather-forecast">
           <div className="time_1">
             <time className="time" dateTime="9:00">09:00</time>
