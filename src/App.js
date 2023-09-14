@@ -10,6 +10,9 @@ import snow from "./img/weather-icons/snow.svg";
 import storm from "./img/weather-icons/storm.svg";
 import unknown from "./img/weather-icons/unknown.svg";
 import Search from "./components/Search";
+
+
+
 import Header from "./Header";
 import Main from "./Main";
 import Footer from "./Footer";
@@ -37,6 +40,7 @@ class App extends Component {
       //   <Search handleInput={this.handleInputChange} /> */
       // </div>
 
+
       // <div> alialahmad_MohammadAlAgha</div>
         <div>
       <Header />
@@ -46,7 +50,10 @@ class App extends Component {
 
         </div>
       
-      );
+    );
+
+
+      ;
     }
   }
 
