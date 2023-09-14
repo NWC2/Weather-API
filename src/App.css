@@ -1,13 +1,14 @@
-*{
+* {
   margin: 0px;
   padding: 0;
 }
-#root{
+
+#root {
   background-color: rgb(120, 214, 235);
   height: 100vh;
 }
 
-nav{
+nav {
   background-color: #5876c3;
   background-color: #759EDA;
   padding: 20px;
@@ -23,31 +24,40 @@ button{
   border: 0px;
 }
 
-  
+header {
+  background-color: #759EDA;
+  padding: 20px;
+  height: 40px;
 
-input {
+  text-align: left
+}
+
+#name {
   background-color: #759EDA;
   color: white;
   border: 0px;
   font-size: medium;
   width: 150px;
 }
-img{
+
+img {
   max-width: 50%;
   height: 50%;
 }
 
-.first-img{
+.first-img {
   display: flex;
   align-items: center;
   justify-content: center;
   align-self: center;
-  
+
 }
-.app{
+
+.app {
   font-family: "Raleway", sans-serif;
 }
-main{
+
+main {
   display: flex;
   justify-content: center;
   background-color: rgb(120, 214, 235);
@@ -56,15 +66,17 @@ main{
   margin-bottom: 0;
   padding-bottom: 0;
 }
-h4{
+
+h4 {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
 }
-h3{
-  
+
+h3 {
+
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -90,28 +102,50 @@ article{
   margin: 2rem 0;
 
 }
-.wheatherItem{
+
+.wheatherItem {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  
 }
-.footer{
+
+.footer {
 
   display: flex;
-  justify-content:center;
-  background-color:rgb(120, 214, 235);
-  margin: 0 50px;
+  justify-content: center;
+  background-color: rgb(120, 214, 235);
+  margin: 0 30px;
 }
 
+article {
+  margin-right: -rem;
+}
 
-.center{
-    display: flex;
-    flex-direction: column;
-    margin: 2rem;
-    height: 50vh;
-   
+.center {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  height: 50vh;
+
+}
+ 
+@media(max-width:467px) {
+  .footer {
+    font-size: 0.6rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+
+  header input {
+    width: 60px;
+  }
+
+  button {
+    width: 100px;
+    font-size: 10px;
+
+  }
 }
 @media(max-width:467px){
   .footer {
