@@ -140,7 +140,7 @@ article {
   height: 50vh;
 
 }
-
+ 
 @media(max-width:467px) {
   .footer {
     font-size: 0.6rem;
