@@ -62,7 +62,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: red; */
 }
 .mc-text{
   color: white;
@@ -78,7 +77,6 @@ body{
 
 }
 .humidity-pressure{
-  /* background-color: aqua; */
   font-family:'Raleway', sans-serif;
   font-size: medium;
   display: flex;
@@ -102,13 +100,4 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-/*  Search bar */
-
-/* Current weather */
-
-/* div {
-  border: 5px solid red;
-} */
-/*  */
+} 

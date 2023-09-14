@@ -1,3 +1,4 @@
+import React, { Component } from "react";
 import mc from "./img/weather-icons/mostlycloudy.svg"
 const Main = () => {
     return (

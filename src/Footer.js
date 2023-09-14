@@ -1,3 +1,4 @@
+import React, { Component } from "react";
 import mc from "./img/weather-icons/mostlycloudy.svg"
 import clear from "./img/weather-icons/clear.svg";
 const Footer = () => {
