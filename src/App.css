@@ -1,30 +1,3 @@
-/* .app {
-  height: 100vh;
-  width: 100vw;
-  transition: background-color 1s ease-in;
-}
-
-.app__header,
-.app__main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  font-family: "Raleway", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
-
-
-/*  Search bar */
-
-/* Current weather */
-
-/* div {
-  border: 5px solid red;
-} */
-
 *{
   font-family: "Raleway", sans-serif;
   background-color: #9CCDF4;
@@ -32,8 +5,9 @@
 
 header{
   background-color: #759eda;
-  padding: 1%;
-  font-family: Raleway;
+  padding: 1.4%;
+  display: flex;
+  
 }
 
 input{
@@ -106,7 +80,7 @@ footer{
   font-family:'Raleway', sans-serif;
   display: flex;
   flex-direction: row;
-  margin-top: 3%;
+  margin-top: 5%;
   justify-content: space-around;
 }
 .daily-weather{
@@ -114,4 +88,28 @@ footer{
   flex-direction: column;
   align-items: center;
 }
-/*  */
+
+
+@media (  max-width: 678px) {
+
+  header{
+    display: flex;
+    flex-direction: column;
+  }
+  .find-weather{
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+
+  footer{
+    display: grid;
+grid-template-columns: 1fr 1fr;  }
+  
+  .mostly-cloudy{
+    width: 40%;
+  }
+
+  .daily-weather{
+    margin-bottom: 5%;
+  }
+}
