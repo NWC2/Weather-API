@@ -47,13 +47,14 @@ class App extends Component {
 
 <main>
 <img className="mainImage" src={mc}></img>
-<h2 className="mainTitle"> overcast clouds</h2>
-<br></br>
-<h2 className="mainTemp"> Temperature&nbsp;&nbsp; 10&deg; to 11&deg; C</h2>
-<br></br>
-<h2 className="mainHumidityPressure"> Humidity&nbsp;&nbsp; 78% &nbsp;&nbsp; Pressure &nbsp;&nbsp;1008.48</h2>
+<div className="temp-data">
+        <p><b>Temperature&nbsp;</b>&nbsp;10&deg; to 11&deg;C</p>
+      </div>
+      <div className="humidity-pressure">
+        <p className="humidity"><b>Humidity&nbsp;</b>&nbsp;&nbsp;&nbsp;&nbsp;78%</p>
+        <p className="pressure"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pressure&nbsp;</b>&nbsp;&nbsp;&nbsp;&nbsp;1008.48</p>
 
-
+      </div>
 
 
 </main>
