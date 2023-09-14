@@ -4,8 +4,8 @@ function head(){
         <div className = "header">
         <header>
         <input type="text" placeholder="Type in a city name"/>
-        <button className="btn" onClick="">FIND WEATHER</button>
-      </header>
+        <button className="btn">FIND WEATHER</button>
+        </header>
         </div>
     );
 }

@@ -85,6 +85,8 @@ table{
 .secondrow{
   font-size: 10px;
 }
+
+
 @media screen and (max-width: 600px) {
   header {
     height: 100px;
