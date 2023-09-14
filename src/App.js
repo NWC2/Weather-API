@@ -13,9 +13,6 @@ import CurrentWeather from "./components/CurrentWeather";
 import WeatherToday from "./components/WeatherToday";
 import FakeWeather from "./FakeWeather.json"
 
-import WeatherToday from "./components/WeatherToday";
-import FakeWeather from "./FakeWeather.json"
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -33,6 +30,8 @@ class App extends Component {
     console.log(FakeWeather);
     return (
       <div className="app">
+        <Nav />
+        <CurrentWeather />
       
        <WeatherToday/>
        
