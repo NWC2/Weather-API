@@ -4,7 +4,7 @@ import { useState } from 'react';
 const Head =(props)=>{
     const [search, setSearch]=useState("")
     const handleClick=()=>{
-        props.searchFotWeather(search)
+        props.searchForWeather(search)
     }
     return(
         <div className = "header">

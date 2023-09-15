@@ -36,8 +36,9 @@ const table1 = (props) => {
         return (x-273.15).toFixed(2);
     }
   
-
+    const backColor=props.color;
     return (
+      <footer style={{ backgroundColor: backColor }}>
         <div className="table">
         <table>
         <tr>
@@ -59,16 +60,17 @@ const table1 = (props) => {
             <td><img src={getWeatherIcon(props.data.list[7].weather[0].id)}/></td>
         </tr>
         <tr>
-            <td>{convert(props.data.list[1].main.temp)}&deg;C</td>
-            <td>{convert(props.data.list[2].main.temp)}&deg;C</td>
-            <td>{convert(props.data.list[3].main.temp)}&deg;C</td>
-            <td>{convert(props.data.list[4].main.temp)}&deg;C</td>
-            <td>{convert(props.data.list[5].main.temp)}&deg;C</td>
-            <td>{convert(props.data.list[6].main.temp)}&deg;C</td>
-            <td>{convert(props.data.list[7].main.temp)}&deg;C</td>
+            <td>{props.data.list[1].main.temp}&deg;C</td>
+            <td>{props.data.list[2].main.temp}&deg;C</td>
+            <td>{props.data.list[3].main.temp}&deg;C</td>
+            <td>{props.data.list[4].main.temp}&deg;C</td>
+            <td>{props.data.list[5].main.temp}&deg;C</td>
+            <td>{props.data.list[6].main.temp}&deg;C</td>
+            <td>{props.data.list[7].main.temp}&deg;C</td>
         </tr>
       </table>
       </div>
+      </footer>
     );
 }
 
