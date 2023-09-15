@@ -10,13 +10,13 @@ import cloudy from "..//img/weather-icons/cloudy.svg";
 import drizzle from "..//img/weather-icons/drizzle.svg";
 import fog from "..//img/weather-icons/fog.svg";
 
-// const convert=(kelvin)=>{
-//     const celsius = kelvin-273.15;
-//     return celsius;
 
-// }
 
 const table1 = (props) => {
+    const convert=(x)=>{
+        return (x-273.15).toFixed(2);
+    
+    }
     return (
         <div className="table">
         <table>
@@ -39,13 +39,13 @@ const table1 = (props) => {
             <td><img src={mostlycloudy}/></td>
         </tr>
         <tr>
-            <td>{props.data.list[1].main.temp}&deg;C</td>
-            <td>{props.data.list[2].main.temp}&deg;C</td>
-            <td>{props.data.list[3].main.temp}&deg;C</td>
-            <td>{props.data.list[4].main.temp}&deg;C</td>
-            <td>{props.data.list[5].main.temp}&deg;C</td>
-            <td>{props.data.list[6].main.temp}&deg;C</td>
-            <td>{props.data.list[7].main.temp}&deg;C</td>
+            <td>{convert(props.data.list[1].main.temp)}&deg;C</td>
+            <td>{convert(props.data.list[2].main.temp)}&deg;C</td>
+            <td>{convert(props.data.list[3].main.temp)}&deg;C</td>
+            <td>{convert(props.data.list[4].main.temp)}&deg;C</td>
+            <td>{convert(props.data.list[5].main.temp)}&deg;C</td>
+            <td>{convert(props.data.list[6].main.temp)}&deg;C</td>
+            <td>{convert(props.data.list[7].main.temp)}&deg;C</td>
         </tr>
       </table>
       </div>
