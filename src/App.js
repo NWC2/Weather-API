@@ -8,8 +8,13 @@ import FakeWeather from "./fakeWeatherData.json";
 import "./App.css";
 const fake = FakeWeather
 console.log(fake)
-// console.log(FakeWeather)
+
+
+
 function App() {
+
+
+   
   return (
     <div className="app">
       <Nav />
