@@ -2,6 +2,7 @@ import React from "react";
 
 import clear from "../img/weather-icons/clear.svg";
 import "./Search.css";
+import "../App.css"
 class Search extends React.Component {
   state = {
     input: ""
@@ -10,21 +11,11 @@ class Search extends React.Component {
   render() {
     return (
       <div>
-        {this.state.input}
-        <input
-          type="text"
-          id="input-name"
-          onChange={event => {
-            this.setState({ input: event.target.value });
-          }}
-        />
-        <button
-          onClick={event => {
-            this.props.handleInput(this.state.input);
-          }}
-        >
-          Say Hello
-        </button>
+     
+     <header>
+            <input id="search" type="text" placeholder="londong"></input>
+            <button id="find">FIND WEATHER</button>
+          </header>
       </div>
     );
   }

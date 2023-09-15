@@ -39,7 +39,7 @@ color: white;
 font-size:x-large;
 
 }
-input:hover{
+input:hover, input:focus, input:focus-visible{
   border: none;
 }
 
@@ -48,12 +48,12 @@ font-size: larger;
 border: 0;
 margin-left: 100px;
 
-width: 15%;
+width: 12%;
 height: 50px;
 background-color: rgb(92 126 201);
 }
 
-.content{
+.content{   
   margin-top: 20px;
   text-align:  center;
   height: 500px;  
@@ -95,7 +95,7 @@ background-color: rgb(92 126 201);
 
 .infoImages{
   height: 100px;
-  width: 7%;
+  width: 60%;
 }
 
 
