@@ -10,6 +10,12 @@ import cloudy from "..//img/weather-icons/cloudy.svg";
 import drizzle from "..//img/weather-icons/drizzle.svg";
 import fog from "..//img/weather-icons/fog.svg";
 
+// const convert=(kelvin)=>{
+//     const celsius = kelvin-273.15;
+//     return celsius;
+
+// }
+
 const table1 = (props) => {
     return (
         <div className="table">

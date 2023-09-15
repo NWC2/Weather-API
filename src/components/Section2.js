@@ -20,7 +20,8 @@ const sectiontwo = (props) => {
             </div>
             <p className="temp"><b>Temperature&nbsp;</b>&nbsp;{props.data.list[1].main.temp_min}&deg; 
             to {props.data.list[1].main.temp_max} &deg;C</p>
-            <p className="humidity"><b>Humidity &nbsp; </b>&nbsp;{props.data.list[1].main.humidity} &nbsp;<b>    Pressure  &nbsp;</b>  {props.data.list[1].main.pressure}</p>
+            <p className="humidity"><b>Humidity &nbsp; </b>&nbsp;{props.data.list[1].main.humidity} &nbsp;<b>   
+                 Pressure  &nbsp;</b>  {props.data.list[1].main.pressure}</p>
         </div>
     );
 }
