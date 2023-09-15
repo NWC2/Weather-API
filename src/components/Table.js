@@ -10,6 +10,7 @@ import drizzle from "..//img/weather-icons/drizzle.svg";
 import fog from "..//img/weather-icons/fog.svg";
 
 
+
 const getWeatherIcon =(id)=>{
   if (id < 300) {
     return storm;}
@@ -35,7 +36,7 @@ const table1 = (props) => {
     const convert=(x)=>{
         return (x-273.15).toFixed(2);
     }
-  
+
     const backColor=props.color;
     return (
       <footer style={{ backgroundColor: backColor }}>
@@ -60,6 +61,7 @@ const table1 = (props) => {
             <td><img src={getWeatherIcon(props.data.list[7].weather[0].id)}/></td>
         </tr>
         <tr>
+
             <td>{props.data.list[1].main.temp}&deg;C</td>
             <td>{props.data.list[2].main.temp}&deg;C</td>
             <td>{props.data.list[3].main.temp}&deg;C</td>

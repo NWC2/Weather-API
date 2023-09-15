@@ -42,7 +42,6 @@ button{
   font-size: 20px;
   color:#25355c;
 }
-
 .firstimage{
   display:flex;
   width: 250px;
@@ -84,6 +83,18 @@ table{
 }
 .secondrow{
   font-size: 10px;
+}
+.app__header,
+.app__main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: "Raleway", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
 }
 
 
