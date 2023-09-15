@@ -1,15 +1,22 @@
 import React from "react";
+// Import the JSON data
 
-import clear from "../img/weather-icons/clear.svg";
 import "./Search.css";
 
-const Search = () => {
+const Search = ({ dataSearch }) => {
+  const city = dataSearch.name;
 
-    return (
-      <header>
-            <input id="search" type="text" placeholder="london"></input>
-            <button id="find">FIND WEATHER</button>
-      </header>
-    );
-}
+  return (
+    <header>
+      <input
+        id={city}
+        type="text"
+        placeholder="Type in your city"
+        defaultValue={city}
+      ></input>
+      <button id="find">FIND WEATHER</button>
+    </header>
+  );
+};
+
 export default Search;
