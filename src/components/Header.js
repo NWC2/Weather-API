@@ -1,12 +1,18 @@
 import React from 'react';
-function head(){
+import { useState } from 'react';   
+
+const Head =(props)=>{
+    const [search, setSearch]=useState("")
+    const handleClick=()=>{
+        props.searchFotWeather(search)
+    }
     return(
         <div className = "header">
         <header>
-        <input type="text" placeholder="Type in a city name"/>
-        <button className="btn">FIND WEATHER</button>
+        <input  onChange={e=>setSearch(e.target.value)}   type="text" placeholder="Type in a city name"/>
+        <button onClick={handleClick}   className="btn">FIND WEATHER</button>
         </header>
         </div>
     );
 }
-export default head;
+export default Head;

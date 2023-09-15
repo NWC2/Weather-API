@@ -17,6 +17,9 @@ class Search extends React.Component {
           id="input-name"
           onChange={event => {
             this.setState({ input: event.target.value });
+
+            // value={cityName}
+            // onChange={handleInputChange}
           }}
         />
         <button
