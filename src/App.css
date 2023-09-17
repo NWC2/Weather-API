@@ -1,14 +1,14 @@
 body{
   
-    height: 100%;
-    width: auto;
+  height: 100%;
+  width: auto;
   margin: 0px;
   padding: 0px;
   font-family: "Raleway", sans-serif;
   margin: 0;
   background-color: rgb(141,194,234, 0.89);
-
 }
+
 .app{
   margin: 0;
   height: 100%;
@@ -17,11 +17,7 @@ body{
 header{
   height: 110px;
   background-color: rgb(121 159 215);
-
-
 }
-
-
 
 input{
   background-color: transparent;
@@ -33,12 +29,13 @@ input{
   height: 30px;
   font-size: large;
 } 
+
 #search::placeholder{
 text-align:start ;
 color: white;
 font-size:x-large;
-
 }
+
 input:hover, input:focus, input:focus-visible{
   border: none;
 }
@@ -47,7 +44,6 @@ button{
 font-size: larger;
 border: 0;
 margin-left: 100px;
-
 width: 12%;
 height: 50px;
 background-color: rgb(92 126 201);
@@ -57,10 +53,9 @@ background-color: rgb(92 126 201);
   margin-top: 20px;
   text-align:  center;
   height: 500px;  
-} 
+}   
 
 .t1{
-
   margin-top: 0px;
   margin-bottom: 30px;
 }
@@ -69,9 +64,7 @@ background-color: rgb(92 126 201);
   font-size:  small;
 }
 
-
 .mainImage {
- 
   height: 50%;
   width: 50%;
 }
@@ -81,7 +74,6 @@ background-color: rgb(92 126 201);
 }
 
 .info{ 
-  
   display: flex;
   margin-left: 10%;
   margin-right: 10%;
@@ -101,7 +93,5 @@ background-color: rgb(92 126 201);
 
 
 
-/*  Search bar */
 
-/* Current weather */
 

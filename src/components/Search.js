@@ -1,7 +1,4 @@
 import React from "react";
-// Import the JSON data
-
-import "./Search.css";
 
 const Search = ({ city, onChangeCity, onSearch }) => {
   return (
