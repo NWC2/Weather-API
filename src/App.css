@@ -1,9 +1,89 @@
-.app {
-  height: 100vh;
-  width: 100vw;
-  transition: background-color 1s ease-in;
+@font-face {
+  font-family: 'Raleway';
+  src: url('/home/jana/Desktop/Weather-API/public/index.html') format('truetype');
 }
+body{
+  margin:0;
+  padding: 0;
+  font-family:'Raleway', sans-serif;
+  background-color: #8FC8F4;
+}
+header{
+  font-family:'Raleway', sans-serif;
+  background-color:#759EDA;
+  height: 140px;
+}
+input{
+  font-family:'Raleway', sans-serif;
+  border: none;
+  background-color:#759EDA;
+  margin-left: 20px;
+  height: 50px;
+  font-size:28px;
+  color: white;
+  outline: none;
+ }
+ ::placeholder{
+  color: white;
+  font-family:'Raleway', sans-serif;
+ }
+ input:focus{
+  border-bottom: 2px solid #5879C7;
+}
+button{
+  font-family:'Raleway', sans-serif;
+  background-color: #5879C7;
+  border: 0px;
+  border-radius: 3px;
+  height: 75px;
+  margin-left: 5%;
+  margin-top: 30px;
+  width:200px;
+  font-size: 20px;
+  color:#25355c;
+}
+.firstimage{
+  display:flex;
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+  border-radius: 50%;
+  margin-left: 43%;
+}
+.overcast{
+  font-family:'Raleway', sans-serif;
+  color:white;
+  font-size: 28px;
+  margin-left: 44%;
+}
+.temp{
+  font-family:'Raleway', sans-serif;
+  color:#25355c;
+  font-size: 28px;
+  margin-left: 41%;
+  margin-top: 35px;
+}
+.humidity{
+  font-family:'Raleway', sans-serif;
+  color:#25355c;
+  font-size: 19px;
+  margin-left: 41%;
+  margin-top: 35px;
+  
+}
+table{
+  color:#25355c;
+  font-size: 19px;
+  margin-left: 19%;
+  margin-right:40%;
+  width: 60%;
+  text-align: center;
+  margin-top: 3.9%;
 
+}
+.secondrow{
+  font-size: 10px;
+}
 .app__header,
 .app__main {
   width: 100%;
@@ -14,12 +94,46 @@
   font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
-/*  Search bar */
 
-/* Current weather */
+@media screen and (max-width: 600px) {
+  header {
+    height: 100px;
+  }
 
-div {
-  border: 5px solid red;
+  input {
+    font-size: 20px;
+  }
+
+  button {
+    height: 60px;
+    font-size: 16px;
+  }
+
+  .firstimage {
+    width: 150px;
+    height: 150px;
+    margin-left: 29%;
+  }
+
+  .overcast{
+    font-size: 18px;
+    margin-left: 30%;
+  }
+  .temp {
+    font-size: 18px;
+    margin-left: 25%;
+  }
+  .humidity{
+    font-size: 16px;
+    margin-left: 20%;
+  }
+
+  table {
+    font-size: 20px;
+    margin-left: 8%;
+    margin-right: 5%;
+  }
 }

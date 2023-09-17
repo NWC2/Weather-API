@@ -59,7 +59,7 @@ Add and commit this change to git, and push it up to your remote github repo:
 # git push
 ```
 
-Pay attention to any errors, and then check that your changes made it to github, by visiting github.com with your browser and inspecting your repo there.
+Pay attention to any errors, and then check that your changes made it to github, by visiting github.com with your browser and inspecting your repo there.a
 
 ## Instructions
 
@@ -189,7 +189,7 @@ Once you've got this all working, it's time to fetch some real weather data!
 ```
 
 ### 5. Getting the LIVE weather data <kbd>🔑x20</kbd>
-
+cc
 We'll be using data from this API: http://api.openweathermap.org/data/2.5/forecast?q=${this.state.searchInput}&cnt=8&units=metric&appid=${apiKey}
 
 The data will come in JSON format, and will look like this: https://samples.openweathermap.org/data/2.5/forecast?q=M%C3%BCnchen,DE&appid=b6907d289e10d714a6e88b30761fae22
@@ -198,7 +198,7 @@ The data will come in JSON format, and will look like this: https://samples.open
 
 **2)** Once logged in, go to the API keys tab and copy the default Key. Keep this somewhere safe as you will need it when you fetch data.
 
-![api key](src/img/instructions/api-key.png)
+![api key](src/img/instructions/api-key.png)ccc
 
 **3)** The format you'll need to follow to make API calls is:
 `http://api.openweathermap.org/data/2.5/forecast?q=${CITY_NAME}&cnt=8&units=metric&appid=${YOUR_API_KEY}`
