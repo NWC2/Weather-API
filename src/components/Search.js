@@ -3,18 +3,19 @@ import React from "react";
 
 import "./Search.css";
 
-const Search = ({ dataSearch }) => {
-  const city = dataSearch.name;
-
+const Search = ({ city, onChangeCity, onSearch }) => {
   return (
     <header>
       <input
         id={city}
         type="text"
         placeholder="Type in your city"
-        defaultValue={city}
+        value={city}
+        onChange={(e) => onChangeCity(e.target.value)}
       ></input>
-      <button id="find">FIND WEATHER</button>
+      <button id="find" onClick={onSearch}>
+        FIND WEATHER
+      </button>
     </header>
   );
 };

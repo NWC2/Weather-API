@@ -26,7 +26,7 @@ const WeatherNow = ({ dataWeather }) => {
         {dataWeather[0].main.temp_min}° to {dataWeather[0].main.temp_max}°C
       </p>
       <p class="t3">
-        <strong>Humidty</strong> &nbsp;&nbsp; {dataWeather[0].main.humidity}
+        <strong>Humidty</strong> &nbsp;&nbsp; {dataWeather[0].main.humidity}%
         &nbsp;&nbsp;
         <strong>Pressure&nbsp;&nbsp;</strong> {dataWeather[0].main.pressure}
       </p>
