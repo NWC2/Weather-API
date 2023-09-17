@@ -10,14 +10,14 @@ function App() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: "Jana"
-    };
-  }
-}
+// class App extends Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       name: "Jana"
+//     };
+//   }
+// }
   const searchForWeather = (searchInput) => {
     setLoading(true);
     setError(null);
