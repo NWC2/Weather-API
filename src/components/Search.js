@@ -1,8 +1,8 @@
 import React from "react";
 
-const Search = ({ city, onChangeCity, onSearch }) => {
+const Search = ({ city, onChangeCity, onSearch, weatherState }) => {
   return (
-    <header>
+    <header data-weather-state={weatherState}>
       <input
         id={city}
         type="text"
@@ -10,7 +10,7 @@ const Search = ({ city, onChangeCity, onSearch }) => {
         value={city}
         onChange={(e) => onChangeCity(e.target.value)}
       ></input>
-      <button id="find" onClick={onSearch}>
+      <button id="find" onClick={onSearch} data-weather-state={weatherState}>
         FIND WEATHER
       </button>
     </header>

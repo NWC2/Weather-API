@@ -8,23 +8,23 @@ import imgSnow from "./img/weather-icons/snow.svg";
 import imgStorm from "./img/weather-icons/storm.svg";
 import imgUnknow from "./img/weather-icons/unknown.svg";
 
-export const findImage = (ID) => {
+export const findWeatherImage = (id) => {
   switch (true) {
-    case ID < 300:
+    case id < 300:
       return imgStorm;
-    case ID < 500:
+    case id < 500:
       return imgDrizzle;
-    case ID < 600:
+    case id < 600:
       return imgRain;
-    case ID < 700:
+    case id < 700:
       return imgSnow;
-    case ID < 800:
+    case id < 800:
       return imgFog;
-    case ID === 800:
+    case id === 800:
       return imgClear;
-    case ID === 801:
+    case id === 801:
       return imgPartlyCloudy;
-    case ID < 805:
+    case id < 805:
       return imgMostlyCloudy;
     default:
       return imgUnknow;
@@ -32,3 +32,16 @@ export const findImage = (ID) => {
 };
 
 export const convertToKelvin = (x) => Math.round(x + 274.14);
+
+// export const findWeatherState = (state) => {
+//   switch (state) {
+//     case id < 800:
+//       return "Rain";
+//     case id === 800:
+//       return "Clear";
+//     case id > 800:
+//       return "Cloud";
+//     default:
+//       return "Cloud";
+//   }
+// };

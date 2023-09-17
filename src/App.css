@@ -1,22 +1,49 @@
 body{
-  
-  height: 100%;
   width: auto;
   margin: 0px;
   padding: 0px;
   font-family: "Raleway", sans-serif;
   margin: 0;
-  background-color: rgb(141,194,234, 0.89);
+}
+
+
+.app,
+header, 
+button {
+  transition: background-color 1s ease;
 }
 
 .app{
   margin: 0;
-  height: 100%;
+  height: 100vh;
+}
+
+.app[data-weather-state="Rain"] {
+  background-color: #a7bdcd;
+}
+
+.app[data-weather-state="Clear"] {
+  background-color: #028cf6;
+}
+
+.app[data-weather-state="Clouds"] {
+  background-color: #9ccef4;
 }
 
 header{
   height: 110px;
-  background-color: rgb(121 159 215);
+}
+
+header[data-weather-state="Rain"] {
+  background-color: #657da2;
+}
+
+header[data-weather-state="Clear"] {
+  background-color: #1566df;
+}
+
+header[data-weather-state="Clouds"] {
+  background-color: #759eda;
 }
 
 input{
@@ -46,7 +73,18 @@ border: 0;
 margin-left: 100px;
 width: 12%;
 height: 50px;
-background-color: rgb(92 126 201);
+}
+
+button[data-weather-state="Rain"] {
+  background-color: #445e9e;
+}
+
+button[data-weather-state="Clear"] {
+  background-color: #073ec1;
+}
+
+button[data-weather-state="Clouds"] {
+  background-color: #5879c7;
 }
 
 .content{   
@@ -92,6 +130,41 @@ background-color: rgb(92 126 201);
 
 
 
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .app, header {
+    height: auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  input {
+    width: 80%;
+    margin-top: 10px;
+  }
+
+  button {
+    width: 60%;
+    margin: 10px auto;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .imageboxes {
+    width: 80%;
+    margin: 2% auto;
+  }
+
+  .infoImages {
+    height: 70px;
+    width: 50%;
+  }
+}
 
 
 

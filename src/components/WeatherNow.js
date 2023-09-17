@@ -1,5 +1,5 @@
 import React from "react";
-import { findImage, convertToKelvin } from "../helpers";
+import { findWeatherImage, convertToKelvin } from "../helpers";
 
 const WeatherNow = ({ dataWeather }) => {
   return (
@@ -7,7 +7,7 @@ const WeatherNow = ({ dataWeather }) => {
       <img
         class="mainImage"
         id="main-MostlyCloudy"
-        src={findImage(dataWeather[0].weather[0].id)}
+        src={findWeatherImage(dataWeather[0].weather[0].id)}
         alt="current weather icon"
       />
       <h3 class="t1">{dataWeather[0].weather[0].main}</h3>

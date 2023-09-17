@@ -4,6 +4,7 @@ import WeatherNow from "./components/WeatherNow";
 import Weather24 from "./components/Weather24";
 import {} from "./components/WeatherNow";
 import "./App.css";
+import { findWeatherState } from "./helpers";
 
 const YOUR_API_KEY = "7cdf675119e030962815ed0195219cf3";
 
@@ -33,13 +34,17 @@ const App = () => {
   }, []);
 
   return (
-    <div className="app">
+    <div>
       {liveWeather && (
-        <div id="state">
+        <div
+          className="app"
+          data-weather-state={liveWeather.list[0].weather[0].main}
+        >
           <Search
             city={cityName}
             onChangeCity={setCityName}
             onSearch={fetchWeatherData}
+            weatherState={liveWeather.list[0].weather[0].main}
           />
           <WeatherNow dataWeather={liveWeather.list} />
           <Weather24 dataWeather24={liveWeather.list} />
